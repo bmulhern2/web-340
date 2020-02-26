@@ -8,8 +8,7 @@ Description: This is an HTTP server built with HTTP and Express
 var express = require('express');
 var http = require('http');
 
-var app = express();
-
+var app = express(); 
 app.use(function(request, response){
     console.log("In comes a request to:" + request.url);
     response.end("Hello World");
