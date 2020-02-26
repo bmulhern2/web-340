@@ -9,16 +9,16 @@ var express = require('express');
 var http = require('http');
 
 var app = express();
-app.get('/', res => {
+app.get('/', (req, res) => {
     res.end("Welcome to The Homepage!");
 });
-app.get('/about', res => {
+app.get('/about', (req, res) => {
     res.end("Welcome to the about page!");
 });
-app.get('/contact', res => {
+app.get('/contact', (req, res) => {
     res.end("Welcome to the contact page!");
 });
-app.use(res => {
+app.use((req, res) => {
     res.statusCode = 404;
     res.end("404!");
 })

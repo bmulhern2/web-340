@@ -1,10 +1,11 @@
 {
   "name": "ejs-views",
   "version": "1.0.0",
-  "main": "mulhern-Exercise-2.3.js",
+  "main": "mulhern-Assignment-2.4.js",
   "author": "Brendan Mulhern",
   "private": true,
-    "dependencies": {
+  "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
 }
