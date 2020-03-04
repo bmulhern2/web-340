@@ -1,0 +1,13 @@
+{
+    "name": "morgan-logging",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "main": "mulhern-Exercise-3.2.js",
+    "dependencies": {
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "http": "0.0.0",
+        "morgan": "^1.9.1",
+        "nodemon": "^2.0.2"
+    }
+}
