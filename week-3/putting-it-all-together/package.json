@@ -1,0 +1,11 @@
+{
+    "name": "Exercise 3.4",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "main": "mulhern-Exercise-3.4.js",
+    "dependencies": {
+        "ejs": "^3.0.1",
+        "express": "^4.17.1",
+        "morgan": "^1.9.1"
+    }
+}
