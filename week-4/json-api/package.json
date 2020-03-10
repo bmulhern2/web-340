@@ -1,0 +1,9 @@
+{
+    "name": "mulhern-Exercise-4.2",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "main": "mulhern-Exercise-4.2.js",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
