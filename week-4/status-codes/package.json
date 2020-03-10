@@ -1,3 +1,8 @@
 {
-    "name": "mulhern-Exercise-4."
+    "name": "mulhern-Exercise-4.",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
