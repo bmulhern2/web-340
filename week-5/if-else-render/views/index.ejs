@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Names</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+} html {
+    text-align: center;
+} nav {
+    background-color: purple;
+    color: white;
+} body {
+    color: black;
+    background-color; white;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <h2>Names</h2>
+    </nav>
+    <% if (names.length > 0) { %>
+        <% for (var i =0; i < names.length; i++) { %>
+            <div><%= names[i] %></div>
+        <% } %>
+    <% } %>
+</body>
+<script>
+console.log(names);
+</script>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "if-else-render",
+  "author": "Brendan Mulhern",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
