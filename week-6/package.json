@@ -1,0 +1,11 @@
+{
+    "name": "mulhern-Exercise-6.3",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "main": "mulhern-Exercise-6.3.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.9.6",
+        "morgan": "^1.10.0"
+    }
+}
