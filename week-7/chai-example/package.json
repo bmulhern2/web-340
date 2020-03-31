@@ -1,0 +1,13 @@
+{
+    "name": "mulhern-Exercise-7.3",
+    "author": "Brendan Mulhern",
+    "private": true,
+    "scripts": {
+        "test": "mocha"
+    },
+    "main": "test/mulhern-Exercise-7.3.js",
+    "dependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^7.1.1"
+    }
+}
