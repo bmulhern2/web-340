@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  mulhern-Exercise-7.2
+; Author: Professor Krasso
+; Date:   31 March 2020
+; Modified By: Brendan Mulhern
+; Description: Tests with mocha.
+;===========================================
+*/
 var assert = require("assert");
 
 describe("String#split", function(){
