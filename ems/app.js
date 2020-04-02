@@ -10,12 +10,17 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var employee = require("./models/employee");
 var logger = require('morgan');
 
 var app = express();
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(logger("short"));
+var employee = new employee({
+    firstName: "Brendan",
+    lastName: "Mulhern"
+});
 app.get("/", function (req, res) { 
     res.render("index", {
     title: "Home Page"
