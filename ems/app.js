@@ -12,18 +12,32 @@ var http = require('http');
 var path = require('path');
 var employee = require("./models/employee");
 var logger = require('morgan');
+var helmet = require("helmet");
+var cookieParser = require("cookie-parser");
+var csrf = require("csurf");
 
+var csrfProtection = csrf({cookie:true});
 var app = express();
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(logger("short"));
+app.use(helmet.xssFilter());
+app.use(cookieParser());
+app.use(csrfProtection);
+app.use(function(request, response, next) {
+var token = request.csrfToken();
+response.cookie("XSRF-TOKEN",token);
+response.locals.csrfToken = token;
+next();    
+});
+
 var employee = new employee({
     firstName: "Brendan",
     lastName: "Mulhern"
 });
 app.get("/", function (req, res) { 
     res.render("index", {
-    title: "Home Page"
+    title: "XSS Prevention Example"
     })
 })
 http.createServer(app).listen(8080, function() {
